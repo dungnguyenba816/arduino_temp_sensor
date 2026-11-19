@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Temperature</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <main class="dashboard">
+        <header class="dashboard-header">
+            <h1>Room Temperature</h1>
+            <p id="connection-status" class="connection" role="status">Connecting</p>
+        </header>
+
+        <section class="reading-card" aria-labelledby="reading-label">
+            <div class="reading-body">
+                <h2 id="reading-label" class="reading-label">Latest reading</h2>
+                <p id="reading" class="reading" data-empty>Waiting for a reading</p>
+            </div>
+            <p class="reading-footer">
+                <span>Last updated</span>
+                <span id="update-placeholder">No readings yet</span>
+                <time id="last-updated" hidden></time>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
